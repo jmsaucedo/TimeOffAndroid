@@ -1,0 +1,98 @@
+<!--<ion-view view-title="On The Road Request">
+  <ion-content class="padding">
+          <div class="item item-divider" style="background-color:rgb(36, 226, 26);color:white">C.- My Request For Emergency</div>
+          <div class="item item-body">
+              <label class="item item-input item-stacked-label">
+                  <span class="input-label"><b>Title of Request</b></span>
+                  <input type="text">
+              </label>
+              <label class="item item-input item-stacked-label">
+                  <span class="input-label"><b>Start Date</b></span>
+                  <input type="date" >
+              </label>
+              <label class="item item-input item-stacked-label">
+                  <span class="input-label"><b>Start Time</b></span>
+                  <input type="time">
+              </label>
+              <label class="item item-input item-stacked-label">
+                  <span class="input-label"><b>End Date</b></span>
+                  <input type="date">
+              </label>
+              <label class="item item-input item-stacked-label">
+                  <span class="input-label"><b>End Time</b></span>
+                  <input type="time">
+              </label>
+              <label class="item item-input item-stacked-label">
+                  <span class="input-label"><b>Emergency Phone</b></span>
+                  <input type="text">
+              </label>
+              <label class="item item-input item-stacked-label">
+                  <span class="input-label"><b>Reason For Request</b></span>
+                  <input type="text">
+              </label>
+
+              <button class="button button-balanced">
+                  Send
+              </button>
+              <button class="button button-stable">
+                  Cancel
+              </button>
+          </div>
+  </ion-content>
+</ion-view>-->
+
+<ion-view view-title="Request From On The Road">
+  <ion-content >
+      <!--<div id="mydiv" class="hideDiv">
+          <img src="img/ajax-loader.gif" style="width:60%;" class="ajax-loader" />
+      </div>-->
+          <div class="item item-divider" style="background-color:red;color:white">On The Road</div>
+          <div>
+              <!--{{data.today | date:'yyyy-MM-dd'}}-->
+              <label class="item item-input item-stacked-label">
+                  <span class="input-label"><b>Reason:</b></span>
+                  <select class="item item-input item-stacked-label" style="width:99%" name="reasonSelect" id="reasonSelect" ng-model="data.reasonSelect">
+                      <option ng-repeat="option in reasonList" value="{{option.type}}">{{option.type}}</option>
+                  </select>
+              </label>
+              <div class="item row">
+                  <div class="col">
+                      <label class="item item-input item-stacked-label timeCSS">
+                          <span class="input-label"><b>I Will Be (Approx):</b></span>
+                          <select class="item item-input item-stacked-label" style="width:60%" name="repeatSelect" id="repeatSelect" ng-model="data.repeatSelect">
+                              <option ng-repeat="option in range.availableOptions" value="{{option.id}}">{{option.name}}</option>
+                          </select>
+                      </label>
+                  </div>
+                  <div class="col">
+                      <label class="item item-input item-stacked-label timeCSS">
+                          <span class="input-label"><b>Late:</b></span>
+                          <select class="item item-input item-stacked-label" style="width:99%" name="meditionSelect" id="meditionSelect" ng-change="updateDDL()" ng-model="data.meditionSelect">
+                              <option ng-repeat="option in medition.availableOptions" value="{{option.id}}">{{option.name}}</option>
+                          </select>
+                      </label>
+                  </div>
+              </div>
+
+              <!--<label class="item item-input item-stacked-label">
+                  <span class="input-label"><b>I Will Be:</b></span>
+                  <select class="item item-input item-stacked-label" style="width:99%" name="repeatSelect" id="repeatSelect" ng-model="data.repeatSelect">
+                      <option ng-repeat="option in range.availableOptions" value="{{option.id}}">{{option.name}}</option>
+                  </select>
+              </label>
+              <label class="item item-input item-stacked-label">
+                  <span class="input-label"><b>Late:</b></span>
+                  <select class="item item-input item-stacked-label" style="width:99%" name="meditionSelect" id="meditionSelect" ng-change="updateDDL()" ng-model="data.meditionSelect">
+                      <option ng-repeat="option in medition.availableOptions" value="{{option.id}}">{{option.name}}</option>
+                  </select>
+              </label>-->
+              <label class="item item-input item-stacked-label">
+                  <span class="input-label"><b>Remarks:</b></span>
+                  <input type="text" ng-model="data.remarks">
+              </label>
+              <button class="button button-block button-balanced" ng-click="saveRequest(data,'Road')">
+                  Submit
+              </button>
+          </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Time Off",
+  "short_name": "Time Off",
+  "version": "com.TimeOffMobileGHINS",
+  "description": "For Request Emergency Time Off",
+  "author": "GCIB Development Team",
+  "icons": [],
+  "start_url": "index.html"
+}

@@ -1,0 +1,62 @@
+﻿
+<ion-view view-title="Request From Home">
+    <ion-content>
+        <!--<div id="mydiv" class="hideDiv">
+            <img src="img/ajax-loader.gif" style="width:60%;" class="ajax-loader" />
+        </div>-->
+        <div class="item item-divider" style="background-color:#0059FF;color:white">From Home</div>
+        <div>
+            <input type="hidden" ng-model="data.employeeID">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label"><b>Reason:</b></span>
+                <input type="text" ng-model="data.reason" id="today">
+                <select class="item item-input item-stacked-label" style="width:99%;height:50px" name="reasonSelect" id="reasonSelect" ng-model="data.reasonSelect">
+                    <option ng-repeat="option in reasonList" value="{{option.type}}">{{option.type}}</option>
+                </select>
+            </label>
+
+            <div class="item row">
+                <div class="col">
+                    <label class="item item-input item-stacked-label timeCSS">
+                        <span class="input-label" id="lblTimeMedition"><b>I Will Be (Approx):</b></span>
+                        <select class="item item-input item-stacked-label" style="width:60%" name="repeatSelect" id="repeatSelect" ng-model="data.repeatSelect">
+                            <option ng-repeat="option in range.availableOptions" value="{{option.id}}">{{option.name}}</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="col">
+                    <label class="item item-input item-stacked-label timeCSS">
+                        <span class="input-label" id="lblLate"><b>Late:</b></span>
+                        <select class="item item-input item-stacked-label" style="width:99%" name="meditionSelect" id="meditionSelect" ng-change="updateDDL()" ng-model="data.meditionSelect">
+                            <option ng-repeat="option in medition.availableOptions" value="{{option.id}}">{{option.name}}</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <!--<label class="item item-input item-stacked-label">
+                <span class="input-label"><b>I Will Be:</b></span>
+                <select class="item item-input item-stacked-label" style="width:99%" name="repeatSelect" id="repeatSelect" ng-model="data.repeatSelect">
+                    <option ng-repeat="option in range.availableOptions" value="{{option.id}}">{{option.name}}</option>
+                </select>
+            </label>-->
+            <!--<label class="item item-input item-stacked-label">
+                <span class="input-label"><b>Late:</b></span>
+                <select class="item item-input item-stacked-label" style="width:99%" name="meditionSelect" id="meditionSelect" ng-change="updateDDL()" ng-model="data.meditionSelect">
+                    <option ng-repeat="option in medition.availableOptions" value="{{option.id}}">{{option.name}}</option>
+                </select>
+            </label>-->
+            <!--<label class="item item-input item-stacked-label">
+                <span class="input-label"><b>On:</b></span>
+                <input type="date" id="today" value="{{today}}">
+            </label>-->
+            <label class="item item-input item-stacked-label">
+                <span class="input-label"><b>Remarks:</b></span>
+                <input ng-model="data.remarks" type="text">
+            </label>
+            <button class="button button-block button-balanced" ng-click="saveRequest(data,'Home')">
+                Submit
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

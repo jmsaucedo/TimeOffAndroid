@@ -1,0 +1,45 @@
+﻿<ion-view view-title="Login">
+    <ion-content style="margin-top:100px;">
+
+        <!--<div id="mydiv" class="hideDiv">
+            <img src="img/ajax-loader.gif" style="width:60%;display:none" class="ajax-loader" />
+        </div>-->
+
+        Login
+        <label class="item item-input item-stacked-label">
+            <span class="input-label"><b>Email:</b></span>
+            <!--<input class="item item-input item-stacked-label" placeholder="Type Email" style="width:99%" type="text" ng-change="findID()" ng-model="data.EmailSelect" >-->
+            <!--<select 
+                    class="item item-input item-stacked-label" 
+                    style="width:99%" 
+                    ng-options="item as item for item in items" 
+                    ng-model="data.EmailSelect"
+                    >
+            </select>-->
+            <select class="item item-input item-stacked-label" 
+                    style="width:99%"  
+                    ng-change="findID()" 
+                    ng-options="Email as Email for Email in items" 
+                    ng-model="data.EmailSelect"></select>
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label"><b>Company:</b></span>
+            <select class="item item-input item-stacked-label"
+                    style="width:99%"
+                    ng-options="o.CompanyID as o.CompanyName for o in companies"
+                    ng-model="data.CompanySelect"
+                    ng-change="findLocationID()">
+            </select>
+
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label"><b>Location:</b></span>
+            <select class="item item-input item-stacked-label"
+                    style="width:99%"
+                    ng-options="o.LocationID as o.LocationName for o in locations"
+                    ng-model="data.LocationSelect">
+            </select>
+        </label>
+        <button class="button button-block button-calm" ng-click="login(data)">Login</button>
+    </ion-content>
+</ion-view>

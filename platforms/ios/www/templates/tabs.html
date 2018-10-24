@@ -1,0 +1,30 @@
+<!--
+Create tabs with an icon and label, using the tabs-stable style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top tabs-stable">
+  <!-- Request Road Tab -->
+  <ion-tab title="On The Road" icon-off="ion-model-s" icon-on="ion-model-s" href="#/tab/dash">
+    <ion-nav-view name="tab-dash"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Request Home Tab -->
+  <ion-tab title="From Home" icon-off="ion-home" icon-on="ion-home" href="#/tab/home">
+    <ion-nav-view name="tab-home"></ion-nav-view>
+  </ion-tab>
+
+  <!-- List Tab -->
+  <!--<ion-tab title="List" icon-off="ion-ios-list-outline" icon-on="ion-ios-list" href="#/tab/chats">
+    <ion-nav-view name="tab-chats"></ion-nav-view>
+  </ion-tab>-->
+
+  <!-- Profile Tab -->
+  <ion-tab title="Profile" icon-off="ion-person" icon-on="ion-person" sudo="ion-person" href="#/tab/account">
+    <ion-nav-view name="tab-account"></ion-nav-view>
+  </ion-tab>
+
+    <!-- Login Tab -->
+  <ion-tab title="Login" icon-off="ion-person" class="nuevo" icon-on="ion-person" href="#/tab/login">
+    <ion-nav-view name="tab-login"></ion-nav-view>
+  </ion-tabs>

@@ -1,0 +1,45 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{chat.name}}">
+  <ion-content class="padding">
+    <!--<img ng-src="{{chat.face}}" style="width: 64px; height: 64px">-->
+    <!--<p>
+      {{chat.lastText}}
+    </p>-->
+      <div class="item item-divider" style="background-color:yellow;color:black">E.- My Request Detail</div>
+      <div class="item item-body">
+          <label class="item item-input">
+              <span class="input-label"><b>Title of Request</b></span>
+              <input class="input-label" type="text" value="{{chat.name}}">
+          </label>
+          <label class="item item-input ">
+              <span class="input-label"><b>Start Date</b></span>
+              <input class="input-label" type="date" value="2015-01-05">
+          </label>
+          <label class="item item-input">
+              <span class="input-label"><b>Start Time</b></span>
+              <input type="time" value="08:00:00">
+          </label>
+          <label class="item item-input">
+              <span class="input-label"><b>End Date</b></span>
+              <input class="input-label"  type="date" value="2015-01-05">
+          </label>
+          <label class="item item-input">
+              <span class="input-label"><b>End Time</b></span>
+              <input class="input-label"  type="time" value="14:00:00">
+          </label>
+          <label class="item item-input">
+              <span class="input-label"><b>Emergency Phone</b></span>
+              <input class="input-label"  type="tel" value="664 328 00 90">
+          </label>
+          <label class="item item-input item-stacked-label">
+              <span class="input-label"><b>Reason For Request</b></span>
+              <textarea placeholder="i crash my car on the freeway and i was taken to jail" rows="5" cols="10"></textarea>
+          </label>
+      </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,51 @@
+<ion-view view-title="Profile">
+  <!--<ion-content>
+    <ion-list>
+    <ion-toggle  ng-model="settings.enableFriends">
+        Enable Friends
+    </ion-toggle>
+    </ion-list>
+  </ion-content>-->
+    <ion-content>
+        <!--<div id="mydiv" class="hideDiv">
+            <img src="img/ajax-loader.gif" style="width:60%;" class="ajax-loader" />
+        </div>-->
+        <div>
+            <div class="item item-divider" style="background-color:#e831cf">My General Info</div>
+            <div class="item item-body">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Full Name</span>
+                    <input type="text" readonly placeholder="{{profile.EmployeeName}}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Email</span>
+                    <input type="text" readonly placeholder="{{profile.Email}}">
+                </label>
+            </div>
+        </div>
+        <div>
+            <div class="item item-divider" style="background-color:#0C0CB0;color:white">B.- Company Info</div>
+            <div class="item item-body">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Position</span>
+                    <input class="input-label" readonly type="text" value="{{profile.Position}}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Department</span>
+                    <input class="input-label" readonly type="text" value="{{profile.Department}}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Location</span>
+                    <input class="input-label" readonly type="text" value="{{profile.LocationName}}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Company</span>
+                    <input class="input-label" readonly type="text" value="{{profile.CompanyName}}">
+                </label>
+            </div>
+        </div>
+        <!--<button class="button button-block button-dark" ng-click="logOff()">
+            Log Off
+        </button>-->
+    </ion-content>
+</ion-view>

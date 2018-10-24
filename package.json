@@ -1,0 +1,25 @@
+{
+  "name": "com.timeoffmobileghins",
+  "version": "1.0.4",
+  "displayName": "Time Off",
+  "cordova": {
+    "platforms": [
+      "browser",
+      "android",
+      "ios"
+    ],
+    "plugins": {
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-transport-security": {}
+    }
+  },
+  "dependencies": {
+    "cordova-android": "^7.1.1",
+    "cordova-browser": "~5.0.4",
+    "cordova-ios": "^4.5.5",
+    "cordova-plugin-network-information": "https://github.com/apache/cordova-plugin-network-information.git",
+    "cordova-plugin-transport-security": "https://github.com/leecrossley/cordova-plugin-transport-security.git",
+    "cordova-plugin-whitelist": "https://github.com/apache/cordova-plugin-whitelist.git"
+  }
+}
